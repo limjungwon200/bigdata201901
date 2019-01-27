@@ -1,5 +1,4 @@
 #외부 라이브러리 설치
-
 install.packages("glue")
 install.packages("ggplot2")
 
@@ -24,7 +23,19 @@ ages[1] <- 20
 # 두번째 사람이 박아무개로 개명
 # 이름의 전체 내용을 출력
 
+#factor구분 하기
+address <- c("서울", "대구", "부산", "군산", "서울", "서울", "대구")
+address
 
+str(address)
+str(year)
+
+address2 <- as.factor(address)
+address2
+str(address2)
+
+address2[1] <- "대구"
+address2
 
 
 
